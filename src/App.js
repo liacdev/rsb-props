@@ -1,6 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
 import PropsComponent from "./Components/props-component";
+import Garage from "./Components/car";
+import Car from "./Components/car";
+import Doodly from "./Components/props-component";
+
+function Welcome(props) {
+  return <h3>Hello, {props.name}</h3>;
+}
 
 function App() {
   return (
@@ -16,6 +23,14 @@ function App() {
         >
           Link to repo
         </a>
+        <Welcome name="Sara" />
+        <Welcome name="Cahal" />
+        <Welcome name="Edite" />
+        <Welcome name="I finally got props to work on this page!" />
+        <Welcome name="The next step is to import a component that is using props" />
+        <Car />
+        <Garage />
+        <Doodly />
         <PropsComponent />
       </header>
     </div>
